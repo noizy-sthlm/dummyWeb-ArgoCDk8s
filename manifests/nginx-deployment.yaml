@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: FrontEndWebApp
-        image: ArgoCD-Tutorial-Image:main
+        image: noizysthlm/dev:latest
         ports:
         - containerPort: 80
