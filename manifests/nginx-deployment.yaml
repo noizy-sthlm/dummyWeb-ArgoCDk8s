@@ -15,7 +15,7 @@ spec:
         app: stable
     spec:
       containers:
-      - name: FrontEndWebApp
+      - name: frontend
         image: noizysthlm/main:latest
         ports:
         - containerPort: 80
