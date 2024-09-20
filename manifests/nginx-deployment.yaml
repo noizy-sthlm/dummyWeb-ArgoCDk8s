@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: noizysthlm/main:latest
+        image: noizysthlm/flask-app
         ports:
         - containerPort: 80
