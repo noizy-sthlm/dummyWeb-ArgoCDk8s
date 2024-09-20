@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: FrontEndWebApp-deployment
+  name: stable
   labels:
-    app: FrontEndWebApp
+    app: stable
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: FrontEndWebApp
+      app: stable
   template:
     metadata:
       labels:
-        app: FrontEndWebApp
+        app: stable
     spec:
       containers:
       - name: FrontEndWebApp
