@@ -1,18 +1,18 @@
-   apiVersion: argoproj.io/v1alpha1
-   kind: Application
-   metadata:
-     name: mainapp
-     namespace: argocd
-   spec:
-     project: default
-     source:
-       repoURL: https://github.com/noizy-sthlm/tutorial-ArgoCd-multi-branch-pipeline/
-       targetRevision: main
-       path: manifests/
-     destination:
-       server: https://kubernetes.default.svc
-       namespace: default
-     syncPolicy:
-       automated:
-         prune: true
-         selfHeal: true
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: dummy-webapp-production
+  namespace: argocd
+spec:
+  project: webapp
+  source:
+    repoURL: https://github.com/noizy-sthlm/dummyWeb-ArgoCDk8s.git
+    targetRevision: main
+    path: manifests/
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: dummy-webapp-production
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
