@@ -1,0 +1,7 @@
+resources:
+  - webapp-deployment.yaml
+  - webapp-service.yaml
+
+images:
+  - name: noizysthlm/dummy-webapp
+    newTag: "dev"
