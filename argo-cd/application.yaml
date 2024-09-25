@@ -3,6 +3,10 @@ kind: Application
 metadata:
   name: dummy-webapp-production
   namespace: argocd
+  annotations:
+    argocd-image-updater.argoproj.io/image-list: webapp=noizysthlm/dummy-webapp:prod
+    argocd-image-updater.argoproj.io/update-strategy: digest
+    argocd-image-updater.argoproj.io/write-back-method: git
 spec:
   project: default
   source:
