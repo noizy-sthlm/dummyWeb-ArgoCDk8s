@@ -4,7 +4,7 @@ metadata:
   name: dummy-webapp-production
   namespace: argocd
 spec:
-  project: webapp
+  project: default
   source:
     repoURL: https://github.com/noizy-sthlm/dummyWeb-ArgoCDk8s.git
     targetRevision: main
