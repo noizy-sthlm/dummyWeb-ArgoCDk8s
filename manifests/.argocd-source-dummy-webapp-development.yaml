@@ -1,3 +1,3 @@
 kustomize:
   images:
-  - noizysthlm/dummy-webapp@sha256:a80d309c3e3074a3ed28d093246b33cb5c7e9900aae507c7ba6bfd57587d7ed9
+  - noizysthlm/dummy-webapp@sha256:f26afb10c6299e74583ea5ea7c517133311ef6e950a4895fbfcb6086ca33de79
