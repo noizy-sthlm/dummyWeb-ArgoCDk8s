@@ -1,0 +1,3 @@
+kustomize:
+  images:
+  - noizysthlm/dummy-webapp@sha256:7622318dcd50231398b9dd1635920401e8537001665d3f04ca0a87fa8d019446
